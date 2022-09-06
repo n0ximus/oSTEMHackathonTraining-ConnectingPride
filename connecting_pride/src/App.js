@@ -3,7 +3,7 @@ import NavBar from "./navbar/navbar"
 function App() {
     return (
         <>
-        <NavBar/>
+            <NavBar />
             <p>testing pride app</p>
         </>
     );
