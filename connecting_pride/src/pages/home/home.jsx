@@ -1,11 +1,18 @@
 import React from "react"
 import "./home.css"
 import Header from "../../header/header"
+import SideBar from "../../sidebar/sidebar"
+import Posts from "../../posts/posts"
 
 export default function Home() {
     return (
-        <div className="home">
-            <Header />
-        </div>
+        <>
+         <Header />
+            <div className="home">
+                <Posts/>
+                <SideBar />
+
+            </div>
+       </>
     )
 }
