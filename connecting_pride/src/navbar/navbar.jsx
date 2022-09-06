@@ -14,7 +14,7 @@ export default function NavBar() {
                 </ul>
             </div>
             <div className="topRight">
-                <img className="topPfpImg" src="../images/icons/default_pfp.png" alt="profile" />
+                <img className="topPfpImg" src="/images/icons/default_pfp.png" alt="profile" />
 
 
                 <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
