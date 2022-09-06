@@ -1,0 +1,17 @@
+.topNav {
+    background-color: indianred;
+    width: 100%;
+    position: sticky;
+    align-items: center;
+    display: flex;
+    top: 0;
+    height: 50px;
+    font-family: 'Merriweather', serif;
+}
+.topCenter{
+    flex: 6;
+}
+.topRight, .topLeft {
+    flex: 3;
+    background-color: orchid;
+}

@@ -1,8 +1,11 @@
+import NavBar from "./navbar/navbar"
+
 function App() {
     return (
-        <div className="App">
-            Connecting Pride
-        </div>
+        <>
+        <NavBar/>
+            <p>testing pride app</p>
+        </>
     );
 }
 export default App;
