@@ -1,37 +1,33 @@
 import "./sidebar.css"
 export default function SideBar() {
     return (
-        < div className = "sidebar" >
+        < div className="sidebar" >
             <div className="sideBarItems">
-                <div className = "sideBarItem">
-                <span className="sideBarTitle"> About oSTEM </span>
-                <img src="/images/ostem_logo_1.png" alt="logo" />
-                <p>
-                    description
-                </p>
-
+                <div className="sideBarItem">
+                    <span className="sideBarTitle"> About oSTEM </span>
+                    <img src="/images/ostem_logo_1.png" alt="logo" />
+                    <p>
+                        description
+                    </p>
                 </div>
                 <div className="sideBarItem">
                     <span className="sideBarTitle"> Categories </span>
                     <ul className="sidebarList">
                         <li className="sidebarListItem">
-                                Resources
+                            Resources
                         </li>
                         <li className="sidebarListItem">
-                                History
+                            History
                         </li>
                         <li className="sidebarListItem">
-                                Events
+                            Events
                         </li>
                         <li className="sidebarListItem">
-                                News
+                            News
                         </li>
-       
                     </ul>
-
-                    </div>
+                </div>
             </div>
-            
         </div >
     )
 }

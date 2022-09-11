@@ -7,16 +7,16 @@
     border-radius: 10px;
     padding-bottom: 30px;
     background-color: #c0ebeb;
-
 }
 
-.sideBarItem > img{
+.sideBarItem > img {
     margin-top: 15px;
 }
-.sideBarItem > p
-{
+
+.sideBarItem > p {
     padding: 30px;
 }
+
 .sideBarTitle {
     margin: 10px;
     font-size: 14px;
@@ -30,15 +30,18 @@
     border-bottom: 1px solid #808080;
     width: 80%;
 }
+
 .sideBarItem {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 }
+
 .sideBarList {
     list-style: none;
     margin-bottom: 30px;
 }
+
 .sideBarListItem {
     display: inline-block;
     width: 50%;
