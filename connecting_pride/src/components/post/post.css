@@ -12,7 +12,7 @@
     font-family: 'Merriweather', serif;
     font-weight: 300;
     color: #46374d;
-    margin-top: 10px;
+    margin-top: 1px;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
@@ -55,7 +55,7 @@ hr {
     border-top: 1px solid #677282;
     color: #fff;
     background-color: #fff;
-    height: 10px;
+    height: 1px;
     width: 100%;
 } !important
 
