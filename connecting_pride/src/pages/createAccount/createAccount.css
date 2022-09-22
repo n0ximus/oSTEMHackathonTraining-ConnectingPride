@@ -1,0 +1,54 @@
+.createAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4) ), url("https://wallpapers.com/images/hd/lgbt-pastel-rainbow-flag-kq18hezjjvek9qvg-kq18hezjjvek9qvg.jpg");
+    background-size: cover;
+    height: calc(100vh - 50px);
+}
+
+.createAccountTitle {
+    font-size: 75px;
+}
+
+.createAccountForm {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .createAccountForm > label {
+        margin: 10px 0;
+        font-size: 30px;
+    }
+
+.createAccountInput {
+    padding: 10px;
+    background-color: #F1E5FF;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+.createAccountButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #d292f7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.createAccountLoginButton {
+    background-color: #d292f7;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    border-radius: 10px;
+}
