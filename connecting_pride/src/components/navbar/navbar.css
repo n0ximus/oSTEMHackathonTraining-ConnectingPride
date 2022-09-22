@@ -44,13 +44,6 @@
     cursor: pointer;
 }
 
-.topSearchIcon {
-    color: #d292f7;
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: 15px;
-}
-
 
 .navListItem.Home {
     color: #ff5454;
