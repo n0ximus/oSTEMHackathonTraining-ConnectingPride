@@ -27,7 +27,7 @@ function App() {
                 <Route path="/post/:id" element={<PostPage />}>
                 </Route>
                 <Route path="/write" element={currentUser ? <WritePost /> : <WritePost />}></Route>
-                <Route path="/settings" element={currentUser ? <Settings /> : <Login />}>
+                <Route path="/settings" element={currentUser ? <Settings /> : <Settings />}>
                 </Route>
             </Routes>
         </Router>
