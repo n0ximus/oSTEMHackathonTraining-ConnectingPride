@@ -1,8 +1,30 @@
 import React from 'react'
 import "./navbar.css"
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Context, ContextProvider } from "../../context/Context";
+
 export default function NavBar() {
-    const user = false;
+    return (
+        <>
+            <ContextProvider>
+                <MyNavBar/>
+            </ContextProvider>
+        </>
+    )
+};
+
+
+const MyNavBar = () => {
+    const { user, dispatch } = useContext(Context);
+    const PF = "http://localhost:3001/images/"
+
+    /*
+     * handles logging out user 
+     * */
+    const handleLogout = () => {
+        dispatch({ type: "LOGOUT" });
+    };
 
     return (
         <div className="topNav">
@@ -24,13 +46,16 @@ export default function NavBar() {
                     <li className="navListItem Write">             <Link className="link" to="/write">
                         Write
                     </Link> </li>
-                    {user && <li className="navListItem Logout">Logout</li>}
+
+                    <li className="navListItem Logout" onClick={handleLogout}>
+                        {user && "Logout"}
+                    </li>
                 </ul>
             </div>
             <div className="topRight">
                 {user ? (
                     <Link className="link" to="/settings">
-                        <img className="topPfpImg" src="/images/icons/default_pfp.png" alt="profile" />
+                        <img className="topPfpImg" src={PF + user.pfp} alt="profile" />
 
                     </Link>
                 ) : (

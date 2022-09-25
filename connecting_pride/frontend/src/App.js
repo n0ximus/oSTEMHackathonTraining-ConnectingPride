@@ -6,10 +6,12 @@ import Settings from "./pages/settings/Settings"
 import Login from "./pages/login/Login"
 import CreateAccount from "./pages/createAccount/CreateAccount"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 
 function App() {
-    const currentUser = false;
+    const { currentUser } = useContext(Context);
     return (
         <Router>
             <NavBar />
