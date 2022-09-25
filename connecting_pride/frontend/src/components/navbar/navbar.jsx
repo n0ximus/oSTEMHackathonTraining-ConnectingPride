@@ -2,7 +2,7 @@ import React from 'react'
 import "./navbar.css"
 import { Link } from "react-router-dom";
 export default function NavBar() {
-    const user = true;
+    const user = false;
 
     return (
         <div className="topNav">
