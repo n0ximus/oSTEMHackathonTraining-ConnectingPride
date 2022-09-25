@@ -1,0 +1,63 @@
+
+.uniquePost {
+    flex: 10;
+}
+
+.editPost {
+    font-size: 20px;
+    float: right;
+}
+
+.uniquePostInfo {
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    color: #5f6982;
+    justify-content: space-between;
+}
+
+.uniquePostImage {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.postIcon {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.uniquePostTitle {
+    margin: 20px;
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.uniquePostWrapper {
+    padding-right: 5%;
+    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.postIcon {
+    color: #5f6982;
+}
+
+.uniquePostDescription {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #46374d;
+    line-height: 40px;
+}
+
+    .uniquePostDescription::first-letter {
+        margin-left: 80px;
+        font-size: 40px;
+        font-weight: 700;
+    }

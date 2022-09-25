@@ -1,0 +1,80 @@
+.writePost {
+    padding-top: 40px;
+
+}
+
+.writePostForm {
+    position: relative;
+    font-family: 'Merriweather', serif;
+}
+
+.writePostText {
+    width: 70vw;
+    font-family: 'Merriweather', serif;
+    height: 100vh;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.writePostGroup {
+    padding-top: 20px;
+    margin-left: 100px;
+    align-items: center;
+    display: flex;
+    font-family: 'Merriweather', serif;
+}
+
+.writePostInput {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    font-family: 'Merriweather', serif;
+    border: solid;
+}
+.writePostSubmit {
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    display: flex;
+    font-family: 'Merriweather', serif;
+    color: black;
+    background-color: #d292f7;
+    padding: 10px;
+    right: 0px;
+    left: 100px;
+    font-size: 25px;
+    cursor: pointer
+        
+}
+
+.writePostInput:focus {
+    outline-style: none;
+}
+
+.writePostInput::placeholder {
+    color: #575757;
+    font-weight: 500;
+}
+
+
+.writePostIcon {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    font-size: 50px;
+    color: #5f6982;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 30px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.writeImage {
+    margin-left: 100px;
+    width: 70vw;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+}
