@@ -6,16 +6,6 @@ import { Context, ContextProvider } from "../../context/Context";
 import { LoginFailure, LoginStart, LoginSuccess } from "../../context/Actions"
 
 export default function Login() {
-    return (
-        <>
-        <ContextProvider>
-            <MyForm />
-                </ContextProvider>
-                </>
-  ) };
-
-
-const MyForm = () => {
     const userRef = useRef();
     const passwordRef = useRef();
     const { dispatch, isFetching } = useContext(Context);
@@ -24,22 +14,21 @@ const MyForm = () => {
      * handle logging in (if it is sucessful, failure, etc)
      * */
     const handleSubmit = async (e) => {
-        console.log("handling submit")
         e.preventDefault();
-        dispatch(LoginStart());
-        console.log("dispatch called")
-
+        dispatch({ type: "LOGIN_START" });
         try {
             const res = await axios.post("/auth/login", {
                 username: userRef.current.value,
                 password: passwordRef.current.value,
             });
 
-            dispatch(LoginSuccess(res.data))
+            dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+            res.data && window.location.replace("/"); /* go to home*/
         } catch (err) {
-            dispatch(LoginFailure())
+            dispatch({ type: "LOGIN_FAILURE" });
         }
     };
+
     return (
         <div className="login">
             <span className="loginTitle">Login</span>

@@ -4,18 +4,9 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context, ContextProvider } from "../../context/Context";
 
+
+
 export default function NavBar() {
-    return (
-        <>
-            <ContextProvider>
-                <MyNavBar/>
-            </ContextProvider>
-        </>
-    )
-};
-
-
-const MyNavBar = () => {
     const { user, dispatch } = useContext(Context);
     const PF = "http://localhost:3001/images/"
 
