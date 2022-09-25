@@ -81,7 +81,7 @@ export default function UniquePost() {
                     </h1>
 
                     {post.photo && (
-                        <img src={PF + post.photo} alt="" className="uniquePostImg" />
+                        <img src={PF + post.photo} alt="post image" className="uniquePostImage" />
                     )}
 
 
