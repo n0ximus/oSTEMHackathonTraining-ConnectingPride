@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const cors = require('cors');
+app.use(cors());
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const auth = require("./src/auth");
@@ -11,6 +13,8 @@ const path = require("path");
 
 dotenv.config();
 app.use(express.json())
+app.use("/images", express.static(path.join(__dirname, "/images")));
+
 mongoose.connect(process.env.MONGO_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
