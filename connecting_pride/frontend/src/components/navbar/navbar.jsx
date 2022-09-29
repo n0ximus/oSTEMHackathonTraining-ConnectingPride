@@ -46,7 +46,7 @@ export default function NavBar() {
             <div className="topRight">
                 {user ? (
                     <Link className="link" to="/settings">
-                        <img className="topPfpImg" src={PF + user.pfp} alt="profile" />
+                        <img className="topPfpImg" src="/images/icons/default_pfp.png"alt="/images/icons/default_pfp.png" />
 
                     </Link>
                 ) : (

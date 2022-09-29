@@ -21,7 +21,6 @@ export default function CreateAccount() {
                 email,
                 password,
             });
-            console.log("user made")
             res.data && window.location.replace("/login"); /* go to login area */
         } catch (err) {
             console.log("err")
